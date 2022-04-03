@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="#">
+    <script src="pixi.js"></script>
+    <script src="PreLoadScreen.js"></script>
+    <script src="Loader.js"></script>
+    <script src="GameScreen.js"></script>
+    <script src="WinPresentClass.js"></script>
+    <script src="Symbol.js"></script>
+    <script src="ReelView.js"></script>
+    <script src="Button.js"></script>
+    <script src="UpdateReelView.js"></script>
+    <script src="generatePositions.js"></script>
+    <script src="CheatReelView.js"></script>
+    <script>
+        var main;
+        var app;
+        var introContainer;
+        var gameContainer;
+        var loader = new PIXI.Loader();
+        var reels = [];
+
+        function init() {
+            initScene();
+            PreLoadScreen()
+        }
+
+        function initScene() {
+            app = new PIXI.Application({
+                width: 820,
+                height: 600,
+                backgroundColor: 0xAAAAAA
+            });
+            document.body.appendChild(app.view);
+
+            main = new PIXI.Container();
+            console.log(main);
+            app.stage.addChild(main);
+            main.name = "mainContainer";
+            app.stage.name = "Stage";
+        }
+
+        window.onload = function () {
+            init();
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
