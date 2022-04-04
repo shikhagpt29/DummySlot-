@@ -1,3 +1,8 @@
+Download Zip or clone repo
+open the project on any IDE such as WebStrom
+Right click on poc.html
+select run poc.html( it will localhost the poc.html)
+
 # DummySlot-
 Majorly two screens
 
@@ -20,3 +25,4 @@ on pressing button following actions happens
 2) Displaying if there are any winning combinations
 
 Also, there is one show Win Stop button which is provided to show( as a cheat case) default winning case
+
